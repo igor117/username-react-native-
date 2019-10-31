@@ -7,17 +7,7 @@ import ProgressLine from '../../Components/ProgressLine/ProgressLine'
 import NavBtn from '../../Components/NavBtn/NavBtn'
 
 
-/**
- * This is an example of a container component.
- *
- * This screen displays a little help message and informations about a fake user.
- * Feel free to remove it.
- */
-
 class ExampleScreen extends React.Component {
-  componentDidMount() {
-  }
-
   render() {
     return (
       <View style={Style.container}>        
@@ -26,9 +16,6 @@ class ExampleScreen extends React.Component {
         <NavBtn />
       </View>
     )
-  }
-  
-  onClose = () => {
   }
 }
 
