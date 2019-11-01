@@ -1,12 +1,8 @@
 import React from 'react'
-import { Dimensions, Text, View  } from 'react-native'
+import { Text, View  } from 'react-native'
 import { connect } from 'react-redux'
-import { responsiveWidth } from 'react-native-responsive-dimensions'
 import Style from './UserNameStyle'
 import Input from '../Input/Input'
-
-
-const SCREEN_WIDTH = Dimensions.get('window').width - responsiveWidth(10);
 
 class UserName extends React.Component {
   constructor(props) {
@@ -19,9 +15,9 @@ class UserName extends React.Component {
 
   render() {
     return (
-      <View style={[Style.container, {width: SCREEN_WIDTH}]}>
+      <View style={Style.container}>
         <View>
-          <Text style={Style.regular}>What's your {"\n"}name?</Text>
+          <Text style={Style.bold}>What's your {"\n"}name?</Text>
           <View>
             <Text style={Style.small}>
               Your name will not be shared with your customers.

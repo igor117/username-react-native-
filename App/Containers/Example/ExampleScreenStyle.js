@@ -1,12 +1,11 @@
 import { StyleSheet } from 'react-native'
 import ApplicationStyles from 'App/Theme/ApplicationStyles'
-import { responsiveWidth } from 'react-native-responsive-dimensions'
 
 export default StyleSheet.create({
   container: {
     ...ApplicationStyles.screen.container,
-    margin: responsiveWidth(5),
+    paddingTop: 38,
     flex: 1,
-    alignItems: 'flex-start',    
+    alignItems: 'flex-start',
   },
 })

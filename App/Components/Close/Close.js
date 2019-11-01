@@ -5,8 +5,6 @@ import { connect } from 'react-redux'
 import Style from './CloseStyle'
 
 class Close extends React.Component {
-  componentDidMount() {
-  }
 
   render() {
     return (

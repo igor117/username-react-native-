@@ -10,12 +10,4 @@ export default StyleSheet.create({
     alignItems: 'center',
     backgroundColor: Colors.primary,
   },
-  logo: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: 70,
-    width: 70,
-    backgroundColor: 'white',
-  },
 })

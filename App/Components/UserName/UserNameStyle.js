@@ -1,27 +1,27 @@
 import { StyleSheet } from 'react-native'
 import Fonts from 'App/Theme/Fonts'
 import Colors from 'App/Theme/Colors'
-import ApplicationStyles from 'App/Theme/ApplicationStyles'
 
 export default StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    paddingTop: 56,
+    marginRight: 18,
+    marginLeft: 18,
   },
-  regular: {
-    ...ApplicationStyles.screen.contents,
-    fontSize: Fonts.size.regular,
-    color: Colors.text,
+  bold: {
+    ...Fonts.style.title,
+    marginBottom: 8,    
   },
   small: {
-    ...ApplicationStyles.screen.contents,
-    fontSize: Fonts.size.small,
-    color: Colors.subText,
+    ...Fonts.style.subTitle,
+    marginBottom: 16,    
   },
   link: {
-    fontSize: Fonts.size.small,
+    ...Fonts.style.subTitle,
     color: Colors.primary,
+    fontFamily: 'NunitoSans-Bold',
   },
-  nameInputs: {
-    ...ApplicationStyles.screen.contents,
+  nameInputs: {    
   }
 })

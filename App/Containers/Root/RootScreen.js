@@ -30,7 +30,7 @@ class RootScreen extends Component {
                       NavigationService.setTopLevelNavigator(navigatorRef)
                     }}
                   />
-              </ScrollView>                 
+              </ScrollView>
       </KeyboardAwareScrollView>
     )
   }

@@ -2,17 +2,18 @@ import { StyleSheet } from 'react-native'
 import Fonts from 'App/Theme/Fonts'
 import Colors from 'App/Theme/Colors'
 import ApplicationStyles from 'App/Theme/ApplicationStyles'
-import { responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions'
 
 export default StyleSheet.create({
   NavBtnContainer: {
     width: '100%',
-    padding: responsiveHeight(2),    
+    paddingTop: 16,    
+    paddingBottom: 16,
+    paddingRight: 18,
   },
   prevBtn: {
     ...ApplicationStyles.screen.NavBtn,
     backgroundColor: Colors.flour,
-    marginRight: responsiveWidth(2)
+    marginRight: 8
   },
   prevBtnIcon: {
     ...Fonts.style.icon,
@@ -20,7 +21,8 @@ export default StyleSheet.create({
   },
   nextBtn: {
     ...ApplicationStyles.screen.NavBtn,
-    backgroundColor: Colors.primary,        
+    backgroundColor: Colors.primary,
+    opacity: 0.5, 
   },
   nextBtnIcon: {
     ...Fonts.style.icon,

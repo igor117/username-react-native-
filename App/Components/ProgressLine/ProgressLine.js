@@ -1,28 +1,23 @@
 import React, { Component } from 'react';
 import { View, Dimensions, TouchableOpacity } from 'react-native'
 import Carousel, { Pagination } from 'react-native-snap-carousel'
-import { responsiveWidth } from 'react-native-responsive-dimensions'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import UserName from '../UserName/UserName'
 import Style from './ProgressLineStyle'
+import posed from 'react-native-pose'
 
-const SCREEN_WIDTH = Dimensions.get('window').width - responsiveWidth(10);
+const SCREEN_WIDTH = Dimensions.get('window').width;
 
 const SCREENS = [
   <UserName />,
-  <></>,
-  <></>
+  <UserName />,
+  <UserName />,
 ]
 
-const ActiveItem = () => (
-  <View style={Style.tabCircle}>
-    <Icon name="user" style={Style.userIcon} />
-  </View>
-)
-
-const InActiveItem = () => (
-  <View style={Style.smallTabCircle}></View>
-)
+const ActiveItem = posed.View({
+  visible: { opacity: 1, scale: 1},
+  hidden: { opacity: 0.2, scale: 0.3}
+});
 
 export default class ProgressLine extends Component {
   
@@ -36,9 +31,9 @@ export default class ProgressLine extends Component {
   render() {
     return (
       <View style={Style.container}>
-        <View>
+        <View style={Style.tabBarcontainer}>
           <Pagination
-            containerStyle={[Style.tabsContainer, {width: responsiveWidth(10 * SCREENS.length)}]}
+            containerStyle={[Style.tabsContainer, {width: 45 * SCREENS.length}]}
             renderDots={ activeIndex => (
               SCREENS.map((screen, i) => (
                 <TouchableOpacity
@@ -48,11 +43,15 @@ export default class ProgressLine extends Component {
                     this.carouselRef._snapToItem(this.carouselRef._getPositionIndex(i));
                   }}
                 >
-                  {
-                    activeIndex === i ?
-                      <ActiveItem /> 
-                      : <InActiveItem />
-                  }                  
+                  {                    
+                      <ActiveItem style={Style.tabCircle} pose={activeIndex === i ? 'visible' : 'hidden'}>
+                        <View >
+                            {activeIndex === i ?
+                              <Icon name="user" style={Style.userIcon} />
+                              : null}
+                          </View>
+                      </ActiveItem>                   
+                  }
                 </TouchableOpacity>
               ))
             )}
