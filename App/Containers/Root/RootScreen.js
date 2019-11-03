@@ -15,23 +15,12 @@ class RootScreen extends Component {
   }
 
   render() {
-    return (
-      <KeyboardAwareScrollView              
-              resetScrollToCoords={{ x: 0, y: 0 }}
-              contentContainerStyle={styles.container}
-              scrollEnabled={false}
-              >
-              <ScrollView 
-                  vertical={true} 
-                  contentContainerStyle={styles.scrollContainer}
-                  > 
-                  <AppNavigator                    
-                    ref={(navigatorRef) => {
-                      NavigationService.setTopLevelNavigator(navigatorRef)
-                    }}
-                  />
-              </ScrollView>
-      </KeyboardAwareScrollView>
+    return (      
+        <AppNavigator                    
+          ref={(navigatorRef) => {
+            NavigationService.setTopLevelNavigator(navigatorRef)
+          }}
+        />
     )
   }
 }

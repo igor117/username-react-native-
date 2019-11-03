@@ -12,6 +12,6 @@ export default StyleSheet.create({
     paddingTop: 8,
     paddingBottom: 13,
     fontSize: Fonts.size.medium,
-    marginBottom: 12,    
+    marginBottom: 12,
   },
 })

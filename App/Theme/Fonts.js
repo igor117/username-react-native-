@@ -1,12 +1,12 @@
 import Colors from './Colors'
 
 const size = {
-  input: 18,
-  regular: 14,
   bold: 28,
-  // regular: responsiveFontSize(5),
   medium: 24,
   small: 18,
+  regularBold: 16,
+  regular: 14,
+  xSmall: 12
 }
 
 const style = {
@@ -17,6 +17,16 @@ const style = {
     fontFamily: 'NunitoSans-Bold',
     fontSize: size.bold,
     color: Colors.text,
+  },
+  headTitle: {
+    fontFamily: 'NunitoSans-Bold',
+    fontSize: size.regularBold,
+    color: Colors.subText,
+  },
+  durationTitle: {
+    fontFamily: 'NunitoSans-Bold',
+    fontSize: size.regular,
+    color: Colors.subText,
   },
   subTitle: {
     fontFamily: 'NunitoSans-Regular',

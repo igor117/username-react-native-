@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { View, Dimensions, TouchableOpacity } from 'react-native'
 import Carousel, { Pagination } from 'react-native-snap-carousel'
-import Icon from 'react-native-vector-icons/FontAwesome'
+import Icon from 'react-native-vector-icons/Feather'
 import UserName from '../UserName/UserName'
 import Style from './ProgressLineStyle'
 import posed from 'react-native-pose'
@@ -43,7 +43,7 @@ export default class ProgressLine extends Component {
                     this.carouselRef._snapToItem(this.carouselRef._getPositionIndex(i));
                   }}
                 >
-                  {                    
+                  {
                       <ActiveItem style={Style.tabCircle} pose={activeIndex === i ? 'visible' : 'hidden'}>
                         <View >
                             {activeIndex === i ?

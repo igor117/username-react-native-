@@ -15,4 +15,6 @@ export default {
   flour: '#ffffff',
   placeHolder: 'rgba(20, 29, 54, 0.5)',
   shadow: 'rgba(33, 33, 33, 0.1)',
+  border: 'rgb(245, 245, 245)',
+  disable: 'rgb(222, 222, 222)'
 }

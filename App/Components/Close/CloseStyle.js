@@ -5,7 +5,7 @@ import ApplicationStyles from 'App/Theme/ApplicationStyles'
 export default StyleSheet.create({
   closeContainer: {
     ...ApplicationStyles.screen.contents,
-    width: '100%',    
+    width: '100%',
   },
   close: {
     marginLeft: 'auto',    

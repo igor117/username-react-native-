@@ -8,4 +8,10 @@ export default StyleSheet.create({
     flex: 1,
     alignItems: 'flex-start',
   },
+  keyboardContainer: {
+    ...ApplicationStyles.screen.container,
+  },
+  scrollContainer: {
+    ...ApplicationStyles.screen.scrollContainer,
+  }
 })

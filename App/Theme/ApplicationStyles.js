@@ -3,7 +3,6 @@
  *
  * Use it to define generic component styles (e.g. the default text styles, default button styles...).
  */
-import { responsiveWidth, responsiveHeight } from 'react-native-responsive-dimensions'
 import Colors from './Colors';
 
 export default {
@@ -20,6 +19,13 @@ export default {
       paddingRight: 18,
       paddingLeft: 18,
     },
+    icon: {
+      width: 34, 
+      height: 34, 
+      borderRadius: 17, 
+      justifyContent: 'center',
+      alignItems: 'center'
+    },
     NavBtn : {
       width: 50,
       height: 50,
@@ -33,4 +39,20 @@ export default {
       elevation: 1,
     }
   },
+  verify: {
+    itemContainer: {
+      paddingTop: 15.5,
+      paddingBottom: 15.5,        
+    },
+    itemHeaderContainer: {
+      flexDirection: 'row',
+    },
+    labelContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      marginLeft: 8,
+      flex: 1
+    }
+  }
 }

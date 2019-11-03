@@ -5,10 +5,10 @@ import ApplicationStyles from 'App/Theme/ApplicationStyles'
 
 export default StyleSheet.create({
   NavBtnContainer: {
-    width: '100%',
-    paddingTop: 16,    
-    paddingBottom: 16,
+    width: '100%',       
     paddingRight: 18,
+    position: 'absolute',
+    top: -66,    
   },
   prevBtn: {
     ...ApplicationStyles.screen.NavBtn,
@@ -30,6 +30,6 @@ export default StyleSheet.create({
   },
   NavBtnRight: {
     marginLeft: 'auto',
-    flexDirection: 'row'
+    flexDirection: 'row',
   }
 })
