@@ -11,9 +11,10 @@ export default {
       flex: 1,
     },
     scrollContainer: {
-      flexGrow: 1, 
+      flex: 1, 
       flexDirection: 'column',
-      height: '100%',width: '100%',
+      height: '100%',
+      width: '100%',
     },
     contents: {
       paddingRight: 18,

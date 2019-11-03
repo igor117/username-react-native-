@@ -5,8 +5,8 @@ export default StyleSheet.create({
   container: {
     ...ApplicationStyles.screen.container,
     paddingTop: 38,
-    flex: 1,
-    alignItems: 'flex-start',
+    flex: 1,    
+    position: 'relative'
   },
   keyboardContainer: {
     ...ApplicationStyles.screen.container,

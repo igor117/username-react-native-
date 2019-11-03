@@ -12,7 +12,7 @@ class ExampleScreen extends React.Component {
     return (
       <View style={Style.container}>        
         <Close />
-        <KeyboardAwareScrollView              
+        <KeyboardAwareScrollView
               resetScrollToCoords={{ x: 0, y: 0 }}
               contentContainerStyle={Style.keyboardContainer}
               scrollEnabled={false}
@@ -27,7 +27,7 @@ class ExampleScreen extends React.Component {
         <KeyboardAvoidingView
             behavior={'position'}
             keyboardVerticalOffset={0}
-            style={{flex: 1, width: '100%'}}
+            style={{}}
             >
             <NavBtn />
           </KeyboardAvoidingView>

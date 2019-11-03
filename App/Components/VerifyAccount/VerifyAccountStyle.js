@@ -11,6 +11,7 @@ export default StyleSheet.create({
   },
   verifyItemContainer: {
     ...ApplicationStyles.verify.itemContainer,
+    paddingTop: 12,
     borderBottomWidth: 1,
     borderBottomColor: Colors.border,    
   },

@@ -4,11 +4,11 @@ import Colors from 'App/Theme/Colors'
 import ApplicationStyles from 'App/Theme/ApplicationStyles'
 
 export default StyleSheet.create({
-  NavBtnContainer: {
-    width: '100%',       
+  NavBtnContainer: {    
     paddingRight: 18,
     position: 'absolute',
-    top: -66,    
+    top: -66,
+    right: 0,    
   },
   prevBtn: {
     ...ApplicationStyles.screen.NavBtn,
@@ -28,8 +28,7 @@ export default StyleSheet.create({
     ...Fonts.style.icon,
     color: Colors.flour       
   },
-  NavBtnRight: {
-    marginLeft: 'auto',
+  NavBtnRight: {    
     flexDirection: 'row',
   }
 })
